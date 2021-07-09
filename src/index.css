@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+.my-googgle-app-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 30px 72px;
+  /* min-height: 100vh; */
+  /* justify-content: center; */
+}
+
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 300px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  /* max-height: 143px; */
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(358px + 1rem);
+  font-weight: 700;
+  top: 64px;
+}
+
+ul.suggestions {
+  position: absolute;
+  background-color: white;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #008f68;
+  color: #fae042;
+  cursor: pointer;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+.searchContainer {
+  display: flex;
+}
+
+.resultsConatiner {
+    margin: 72px;
+}
+
+.searchResultContainer {
+    padding: 20px 0px;
+}
+
+.loader-container {
+    text-align: center;
+}
+
+.paginatorContainer {
+    display: flex;
+    justify-content: center;
+}
